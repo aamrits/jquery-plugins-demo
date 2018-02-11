@@ -9,10 +9,30 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bootstrap 4 template</title>
+    <title>jQuery Plugins Demo</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Highlight CSS -->
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+
+    <!-- owl Carousel CSS -->
+    <link href="css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" />
+
+    <!-- Bxslider CSS -->
+    <link href="css/animate.css" rel="stylesheet" />
+
+    <!-- Flexslider CSS -->
+    <link href="css/flexslider.css" rel="stylesheet" />
+
+    <!-- Bxslider CSS -->
+    <link href="css/jquery.bxslider.min.css" rel="stylesheet" />
+
+    <!-- Swiper CSS -->
+    <link href="css/swiper.min.css" rel="stylesheet" />
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
@@ -46,38 +66,14 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Navigation
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Headroom</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Popup
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Lightbox</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Typography
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">typed.js</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Sliders
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Owl Carousel</a>
-                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Flex Slider</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Jcarousel</a>
+                            <a class="dropdown-item" href="#">Jcarousel (Vertical)</a></a>
+                            <a class="dropdown-item" href="#">Bx Slider</a>
+                            <a class="dropdown-item" href="#">Swiper</a>
                         </div>
                     </li>  
                     <li class="nav-item dropdown">
@@ -89,7 +85,19 @@
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Filterz</a>
                         </div>
-                    </li>                                  
+                    </li> 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Misc
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Headroom.js (Navigation)</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Lightbox</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">typed.js (Typography)</a>
+                        </div>
+                    </li>
                 </ul>
                 <ul class="navbar-nav">                
                     <li class="nav-item">
@@ -123,15 +131,401 @@
         <div class="container">
             <div class="row">
                 <div class="page-wrapper">
-                    <div class="col-sm-12">
-                        kjksdjfkjs
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
+                    
+                    <!-- Owl Carousel -->
+                    <div id="owlCarousel-js">
+                        <div class="col-sm-12">
+                            <div class="section-content">
+                                <h2 class="title-heading">owlCarousel.js</h2>
+                                <div class="border-line"></div>
+                                <div class="desc">
+                                    <h3 class="sub-heading">Description:</h3>
+                                    <div class="short-desc">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    </div><!-- /.short-desc -->
+                                    <h3 class="sub-heading">Demo:</h3>
+                                    <div class="demo-section">
+                                        <div class="basic-carousel owl-carousel owl-theme">
+                                            <div class="item">
+                                                <img src="img/img-1.jpg" class="img-fluid" alt="Image">
+                                            </div>
+                                            <div class="item">
+                                                <img src="img/img-2.jpg" class="img-fluid" alt="Image">
+                                            </div>
+                                            <div class="item">
+                                                <img src="img/img-3.jpg" class="img-fluid" alt="Image">
+                                            </div>
+                                            <div class="item">
+                                                <img src="img/img-4.jpg" class="img-fluid" alt="Image">
+                                            </div>
+                                            <div class="item">
+                                                <img src="img/img-5.jpg" class="img-fluid" alt="Image">
+                                            </div>
+                                            <div class="item">
+                                                <img src="img/img-6.jpg" class="img-fluid" alt="Image">
+                                            </div>
+                                            <div class="item">
+                                                <img src="img/img-7.jpg" class="img-fluid" alt="Image">
+                                            </div>
+                                            <div class="item">
+                                                <img src="img/img-8.jpg" class="img-fluid" alt="Image">
+                                            </div>
+                                        </div>
+                                    </div><!-- /.demo-section -->
+                                    <h3 class="sub-heading">Set up:</h3>
+                                    <div class="set-up">
+                                        <p>This is the basic setup.</p>
+                                        <p><span>Step 1:</span> Add the javascript file before end of <code>&lt;body&gt;</code> tag.</p>  
+                                        <samp>                                            
+                                            &lt;script src="../pathname/typed.min.js"&gt;&lt;/script&gt;
+                                        </samp>
+                                        <p><span>Step 2:</span> Add the HTML.</p>  
+                                        <samp>                                            
+                                            &lt;span id="typed" style="white-space:pre;"&gt;&lt;/span&gt;
+                                        </samp>
+                                        <p><span>Step 3:</span> Add the jquery.</p>  
+                                        <!-- <img src="img/typed.jpg" class="img-fluid" alt="typed.js code">  -->
+                                        <div id="snippet">
+                                            <pre><code>
+                                                (function($) {
+                                                    $(document).ready(function() {
+                                                        //typed.js
+                                                        var options = {
+                                                            strings: ["This is an example of <b>typed.js</b>", "This is the second sentence", "It will continue typing as <b>loop: true</b>"],
+                                                            typeSpeed: 40,
+                                                            loop: true
+                                                        }
+                                                            
+                                                        var typed = new Typed("#typed", options);
+                                                
+                                                    });
+                                                })(jQuery);
+                                            </code></pre> 
+                                            <button class="btn" data-clipboard-action="copy" data-clipboard-target="#snippet">Copy</button>
+                                        </div> 
+                                    </div><!-- /.set-up -->
+                                    <h3 class="sub-heading">Reference:</h3>
+                                    <ol class="ref">
+                                        <li><a href="#">Link 1</a></li>
+                                    </ol>
+                                </div><!-- /.demo-section -->
+                            </div><!-- /.desc -->
+                        </div><!-- /.col-sm-12 -->
+                    </div><!-- #owlCarousel-js -->
+
+                    <!-- Owl Carousel Vertical slider -->
+                    <div id="owlCarousel-vertical-js">
+                        <div class="col-sm-12">
+                            <div class="section-content">
+                                <h2 class="title-heading">owlCarousel.js (Vertical)</h2>
+                                <div class="border-line"></div>
+                                <div class="desc">
+                                    <h3 class="sub-heading">Description:</h3>
+                                    <div class="short-desc">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    </div><!-- /.short-desc -->
+                                    <h3 class="sub-heading">Demo:</h3>
+                                    <div class="offset-sm-3 col-sm-6 demo-section">
+                                        <div class="vertical-carousel owl-carousel owl-theme">
+                                            <div class="item">
+                                                <img src="img/img-1.jpg" class="img-fluid" alt="Image">
+                                            </div>
+                                            <div class="item">
+                                                <img src="img/img-2.jpg" class="img-fluid" alt="Image">
+                                            </div>
+                                            <div class="item">
+                                                <img src="img/img-3.jpg" class="img-fluid" alt="Image">
+                                            </div>
+                                            <div class="item">
+                                                <img src="img/img-4.jpg" class="img-fluid" alt="Image">
+                                            </div>
+                                            <div class="item">
+                                                <img src="img/img-5.jpg" class="img-fluid" alt="Image">
+                                            </div>
+                                        </div>
+                                    </div><!-- /.demo-section -->
+                                    <h3 class="sub-heading">Set up:</h3>
+                                    <div class="set-up">
+                                        <p>This is the basic setup.</p>
+                                        <p><span>Step 1:</span> Add the javascript file before end of <code>&lt;body&gt;</code> tag.</p>  
+                                        <samp>                                            
+                                            &lt;script src="../pathname/typed.min.js"&gt;&lt;/script&gt;
+                                        </samp>
+                                        <p><span>Step 2:</span> Add the HTML.</p>  
+                                        <samp>                                            
+                                            &lt;span id="typed" style="white-space:pre;"&gt;&lt;/span&gt;
+                                        </samp>
+                                        <p><span>Step 3:</span> Add the jquery.</p>  
+                                        <!-- <img src="img/typed.jpg" class="img-fluid" alt="typed.js code">  -->
+                                        <div id="snippet">
+                                            <pre><code>
+                                                
+                                            </code></pre> 
+                                            <button class="btn" data-clipboard-action="copy" data-clipboard-target="#snippet">Copy</button>
+                                        </div> 
+                                    </div><!-- /.set-up -->
+                                    <h3 class="sub-heading">Reference:</h3>
+                                    <ol class="ref">
+                                        <li><a href="#">Link 1</a></li>
+                                    </ol>
+                                </div><!-- /.demo-section -->
+                            </div><!-- /.desc -->
+                        </div><!-- /.col-sm-12 -->
+                    </div><!-- #owlCarousel-vertical-js -->
+
+                    <!-- Flex slider -->
+                    <div id="flex-slider">
+                        <div class="col-sm-12">
+                            <div class="section-content">
+                                <h2 class="title-heading">Flexslider.js</h2>
+                                <div class="border-line"></div>
+                                <div class="desc">
+                                    <h3 class="sub-heading">Description:</h3>
+                                    <div class="short-desc">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    </div><!-- /.short-desc -->
+                                    <h3 class="sub-heading">Demo:</h3>
+                                    <div class="offset-sm-3 col-sm-6 demo-section">
+                                        <div class="flexslider">
+                                            <ul class="slides">
+                                                <li>
+                                                    <img src="img/img-1.jpg" class="img-fluid" alt="Image">
+                                                </li>
+                                                <li>
+                                                    <img src="img/img-2.jpg" class="img-fluid" alt="Image">
+                                                </li>
+                                                <li>
+                                                    <img src="img/img-3.jpg" class="img-fluid" alt="Image">
+                                                </li>
+                                                <li>
+                                                    <img src="img/img-4.jpg" class="img-fluid" alt="Image">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- /.demo-section -->
+                                    <h3 class="sub-heading">Set up:</h3>
+                                    <div class="set-up">
+                                        <p>This is the basic setup.</p>
+                                        <p><span>Step 1:</span> Add the javascript file before end of <code>&lt;body&gt;</code> tag.</p>  
+                                        <samp>                                            
+                                            &lt;script src="../pathname/typed.min.js"&gt;&lt;/script&gt;
+                                        </samp>
+                                        <p><span>Step 2:</span> Add the HTML.</p>  
+                                        <samp>                                            
+                                            &lt;span id="typed" style="white-space:pre;"&gt;&lt;/span&gt;
+                                        </samp>
+                                        <p><span>Step 3:</span> Add the jquery.</p>  
+                                        <!-- <img src="img/typed.jpg" class="img-fluid" alt="typed.js code">  -->
+                                        <div id="snippet">
+                                            <pre><code>
+                                                (function($) {
+                                                    $(document).ready(function() {
+                                                        //typed.js
+                                                        var options = {
+                                                            strings: ["This is an example of <b>typed.js</b>", "This is the second sentence", "It will continue typing as <b>loop: true</b>"],
+                                                            typeSpeed: 40,
+                                                            loop: true
+                                                        }
+                                                            
+                                                        var typed = new Typed("#typed", options);
+                                                
+                                                    });
+                                                })(jQuery);
+                                            </code></pre> 
+                                            <button class="btn" data-clipboard-action="copy" data-clipboard-target="#snippet">Copy</button>
+                                        </div> 
+                                    </div><!-- /.set-up -->
+                                    <h3 class="sub-heading">Reference:</h3>
+                                    <ol class="ref">
+                                        <li><a href="#">Link 1</a></li>
+                                    </ol>
+                                </div><!-- /.demo-section -->
+                            </div><!-- /.desc -->
+                        </div><!-- /.col-sm-12 -->
+                    </div><!-- #flex-slider -->
+
+                    <!-- Bx slider -->
+                    <div id="bx-slider">
+                        <div class="col-sm-12">
+                            <div class="section-content">
+                                <h2 class="title-heading">Bxslider.js</h2>
+                                <div class="border-line"></div>
+                                <div class="desc">
+                                    <h3 class="sub-heading">Description:</h3>
+                                    <div class="short-desc">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    </div><!-- /.short-desc -->
+                                    <h3 class="sub-heading">Demo:</h3>
+                                    <div class="demo-section">
+                                        <div class="slider">
+                                            <div>
+                                                <img src="img/img-1.jpg" class="img-fluid" alt="Image">
+                                            </div>
+                                            <div>
+                                                <img src="img/img-2.jpg" class="img-fluid" alt="Image">
+                                            </div>
+                                            <div>
+                                                <img src="img/img-3.jpg" class="img-fluid" alt="Image">
+                                            </div>
+                                            <div>
+                                                <img src="img/img-4.jpg" class="img-fluid" alt="Image">
+                                            </div>
+                                            <div>
+                                                <img src="img/img-5.jpg" class="img-fluid" alt="Image">
+                                            </div>
+                                        </div>
+                                    </div><!-- /.demo-section -->
+                                    <h3 class="sub-heading">Set up:</h3>
+                                    <div class="set-up">
+                                        <p>This is the basic setup.</p>
+                                        <p><span>Step 1:</span> Add the javascript file before end of <code>&lt;body&gt;</code> tag.</p>  
+                                        <samp>                                            
+                                            &lt;script src="../pathname/typed.min.js"&gt;&lt;/script&gt;
+                                        </samp>
+                                        <p><span>Step 2:</span> Add the HTML.</p>  
+                                        <samp>                                            
+                                            &lt;span id="typed" style="white-space:pre;"&gt;&lt;/span&gt;
+                                        </samp>
+                                        <p><span>Step 3:</span> Add the jquery.</p>  
+                                        <!-- <img src="img/typed.jpg" class="img-fluid" alt="typed.js code">  -->
+                                        <div id="snippet">
+                                            <pre><code>
+                                                (function($) {
+                                                    $(document).ready(function() {
+                                                        //typed.js
+                                                        var options = {
+                                                            strings: ["This is an example of <b>typed.js</b>", "This is the second sentence", "It will continue typing as <b>loop: true</b>"],
+                                                            typeSpeed: 40,
+                                                            loop: true
+                                                        }
+                                                            
+                                                        var typed = new Typed("#typed", options);
+                                                
+                                                    });
+                                                })(jQuery);
+                                            </code></pre> 
+                                            <button class="btn" data-clipboard-action="copy" data-clipboard-target="#snippet">Copy</button>
+                                        </div> 
+                                    </div><!-- /.set-up -->
+                                    <h3 class="sub-heading">Reference:</h3>
+                                    <ol class="ref">
+                                        <li><a href="#">Link 1</a></li>
+                                    </ol>
+                                </div><!-- /.demo-section -->
+                            </div><!-- /.desc -->
+                        </div><!-- /.col-sm-12 -->
+                    </div><!-- #bx-slider -->
+
+                    <!-- Swiper slider -->
+                    <div id="swiper-slider">
+                        <div class="col-sm-12">
+                            <div class="section-content">
+                                <h2 class="title-heading">Swiper</h2>
+                                <div class="border-line"></div>
+                                <div class="desc">
+                                    <h3 class="sub-heading">Description:</h3>
+                                    <div class="short-desc">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    </div><!-- /.short-desc -->
+                                    <h3 class="sub-heading">Demo:</h3>
+                                    <div class="offset-sm-3 col-sm-6 demo-section">
+                                        <!-- Slider main container -->
+                                        <div class="swiper-container">
+                                            <!-- Additional required wrapper -->
+                                            <div class="swiper-wrapper">
+                                                <!-- Slides -->
+                                                <div class="swiper-slide">
+                                                    <img src="img/img-1.jpg" class="img-fluid" alt="Image">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="img/img-2.jpg" class="img-fluid" alt="Image">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="img/img-3.jpg" class="img-fluid" alt="Image">
+                                                </div>
+                                            </div>
+                                            <!-- If we need pagination -->
+                                            <div class="swiper-pagination"></div>
+                                            
+                                            <!-- If we need navigation buttons -->
+                                            <!-- <div class="swiper-button-prev"></div>
+                                            <div class="swiper-button-next"></div> -->
+                                            
+                                            <!-- If we need scrollbar -->
+                                            <!-- <div class="swiper-scrollbar"></div> -->
+                                        </div>
+                                    </div><!-- /.demo-section -->
+                                    <h3 class="sub-heading">Set up:</h3>
+                                    <div class="set-up">
+                                        <p>This is the basic setup.</p>
+                                        <p><span>Step 1:</span> Add the javascript file before end of <code>&lt;body&gt;</code> tag.</p>  
+                                        <samp>                                            
+                                            &lt;script src="../pathname/typed.min.js"&gt;&lt;/script&gt;
+                                        </samp>
+                                        <p><span>Step 2:</span> Add the HTML.</p>  
+                                        <samp>                                            
+                                            &lt;span id="typed" style="white-space:pre;"&gt;&lt;/span&gt;
+                                        </samp>
+                                        <p><span>Step 3:</span> Add the jquery.</p>  
+                                        <!-- <img src="img/typed.jpg" class="img-fluid" alt="typed.js code">  -->
+                                        <div id="snippet">
+                                            <pre><code>
+                                                
+                                            </code></pre> 
+                                            <button class="btn" data-clipboard-action="copy" data-clipboard-target="#snippet">Copy</button>
+                                        </div> 
+                                    </div><!-- /.set-up -->
+                                    <h3 class="sub-heading">Reference:</h3>
+                                    <ol class="ref">
+                                        <li><a href="#">Link 1</a></li>
+                                    </ol>
+                                </div><!-- /.demo-section -->
+                            </div><!-- /.desc -->
+                        </div><!-- /.col-sm-12 -->
+                    </div><!-- #swiper-slider -->
+
+                     <!-- Typed.js -->
+                    <div id="typed-js">
+                        <div class="col-sm-12">
+                            <div class="section-content">
+                                <h2 class="title-heading">Typed.js</h2>
+                                <div class="border-line"></div>
+                                <div class="desc">
+                                    <h3 class="sub-heading">Description:</h3>
+                                    <div class="short-desc">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    </div><!-- /.short-desc -->
+                                    <h3 class="sub-heading">Demo:</h3>
+                                    <div class="demo-section">
+                                        <span id="typed" style="white-space:pre;"></span>
+                                    </div><!-- /.demo-section -->
+                                    <h3 class="sub-heading">Set up:</h3>
+                                    <div class="set-up">
+                                        <p>This is the basic setup.</p>
+                                        <p><span>Step 1:</span> Add the javascript file before end of <code>&lt;body&gt;</code> tag.</p>  
+                                        <samp>                                            
+                                            &lt;script src="../pathname/typed.min.js"&gt;&lt;/script&gt;
+                                        </samp>
+                                        <p><span>Step 2:</span> Add the HTML.</p>  
+                                        <samp>                                            
+                                            &lt;span id="typed" style="white-space:pre;"&gt;&lt;/span&gt;
+                                        </samp>
+                                        <p><span>Step 3:</span> Add the jquery.</p>  
+                                        <img src="img/typed.jpg" class="img-fluid" alt="typed.js code">
+                                    </div><!-- /.set-up -->
+                                    <h3 class="sub-heading">Reference:</h3>
+                                    <ol class="ref">
+                                        <li><a href="#">Link 1</a></li>
+                                    </ol>
+                                </div><!-- /.desc -->
+                            </div><!-- /.section-content -->
+                        </div><!-- /.col-sm-12 -->
+                    </div><!-- #typed-js -->
+
+                </div><!-- #page-wrapper -->
+            </div><!-- #.row -->
+        </div><!-- #.container -->
+    </div><!-- #main-wrapper -->
 
 
     <!-- Slim jquery -->
@@ -146,9 +540,31 @@
     <!-- Fontawesome CSS -->
     <script src="js/fontawesome-all.js"></script>
 
+    <!-- highlight.js -->    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+    <!-- clipboard.js -->
+    <script src="js/clipboard.min.js"></script>
+
+    <!-- owlCarousel.js -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- Typed.js -->
+    <script src="js/typed.min.js"></script>
+    
+    <!-- flexslider.js -->
+    <script src="js/jquery.flexslider-min.js"></script>
+
+    <!-- bxslider.js -->
+    <script src="js/jquery.bxslider.min.js"></script>
+
+    <!-- swiper.js -->
+    <script src="js/swiper.min.js"></script>
+
     <!-- Custom JavaScript -->
     <script src="js/main.js"></script>
 
-  </body>
+</body>
 
 </html>
+
