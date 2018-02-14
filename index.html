@@ -36,6 +36,12 @@
     <!-- Swiper CSS -->
     <link href="css/swiper.min.css" rel="stylesheet" />
 
+    <!-- Roundslider CSS -->
+    <link href="css/roundslider.min.css" rel="stylesheet" />
+
+    <!-- Timeline CSS -->
+    <link href="css/timeline.min.css" rel="stylesheet" />
+
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
 
@@ -194,19 +200,7 @@
                                         <!-- <img src="img/typed.jpg" class="img-fluid" alt="typed.js code">  -->
                                         <div id="snippet">
                                             <pre><code>
-                                                (function($) {
-                                                    $(document).ready(function() {
-                                                        //typed.js
-                                                        var options = {
-                                                            strings: ["This is an example of <b>typed.js</b>", "This is the second sentence", "It will continue typing as <b>loop: true</b>"],
-                                                            typeSpeed: 40,
-                                                            loop: true
-                                                        }
-                                                            
-                                                        var typed = new Typed("#typed", options);
                                                 
-                                                    });
-                                                })(jQuery);
                                             </code></pre> 
                                             <button class="btn" data-clipboard-action="copy" data-clipboard-target="#snippet">Copy</button>
                                         </div> 
@@ -442,13 +436,13 @@
                                             <div class="swiper-wrapper">
                                                 <!-- Slides -->
                                                 <div class="swiper-slide">
-                                                    <img src="img/img-1.jpg" class="img-fluid" alt="Image">
-                                                </div>
-                                                <div class="swiper-slide">
                                                     <img src="img/img-2.jpg" class="img-fluid" alt="Image">
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="img/img-3.jpg" class="img-fluid" alt="Image">
+                                                    <img src="img/img-5.jpg" class="img-fluid" alt="Image">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="img/img-6.jpg" class="img-fluid" alt="Image">
                                                 </div>
                                             </div>
                                             <!-- If we need pagination -->
@@ -491,7 +485,163 @@
                         </div><!-- /.col-sm-12 -->
                     </div><!-- #swiper-slider -->
 
-                     <!-- Typed.js -->
+                    <!-- Round slider -->
+                    <div id="round-slider">
+                        <div class="col-sm-12">
+                            <div class="section-content">
+                                <h2 class="title-heading">Roundslider</h2>
+                                <div class="border-line"></div>
+                                <div class="desc">
+                                    <h3 class="sub-heading">Description:</h3>
+                                    <div class="short-desc">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    </div><!-- /.short-desc -->
+                                    <h3 class="sub-heading">Demo:</h3>
+                                    <div class="demo-section">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <h3>Slider Types</h3>
+                                                <div class="container">
+                                                    <div class="control">
+                                                        <div id="type"></div>
+                                                    </div>
+                                                    <div class="options">
+                                                        <select id="Select1" onchange="sliderTypeChanged(this)" style="float: left;">
+                                                            <option>default</option>
+                                                            <option>min-range</option>
+                                                            <option>range</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="col-sm-6">
+                                                <h3>Circle Shapes</h3>
+                                                <div class="container">
+                                                    <div class="control">
+                                                        <div id="shape"></div>
+                                                    </div>
+                                                    <div class="options">
+                                                        <select id="type1" onchange="sliderShapeChanged(this)" style="float: left;">
+                                                            <option>full</option>
+                                                            <option>quarter-top-left</option>
+                                                            <option>quarter-top-right</option>
+                                                            <option>quarter-bottom-right</option>
+                                                            <option>quarter-bottom-left</option>
+                                                            <option>half-top</option>
+                                                            <option>half-bottom</option>
+                                                            <option>half-left</option>
+                                                            <option>half-right</option>
+                                                            <option>pie</option>
+                                                            <option>custom-half</option>
+                                                            <option>custom-quarter</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.demo-section -->
+                                    <h3 class="sub-heading">Set up:</h3>
+                                    <div class="set-up">
+                                        <p>This is the basic setup.</p>
+                                        <p><span>Step 1:</span> Add the javascript file before end of <code>&lt;body&gt;</code> tag.</p>  
+                                        <samp>                                            
+                                            &lt;script src="../pathname/typed.min.js"&gt;&lt;/script&gt;
+                                        </samp>
+                                        <p><span>Step 2:</span> Add the HTML.</p>  
+                                        <samp>                                            
+                                            &lt;span id="typed" style="white-space:pre;"&gt;&lt;/span&gt;
+                                        </samp>
+                                        <p><span>Step 3:</span> Add the jquery.</p>  
+                                        <!-- <img src="img/typed.jpg" class="img-fluid" alt="typed.js code">  -->
+                                        <div id="snippet">
+                                            <pre><code>
+                                                
+                                            </code></pre> 
+                                            <button class="btn" data-clipboard-action="copy" data-clipboard-target="#snippet">Copy</button>
+                                        </div> 
+                                    </div><!-- /.set-up -->
+                                    <h3 class="sub-heading">Reference:</h3>
+                                    <ol class="ref">
+                                        <li><a href="#">Link 1</a></li>
+                                    </ol>
+                                </div><!-- /.demo-section -->
+                            </div><!-- /.desc -->
+                        </div><!-- /.col-sm-12 -->
+                    </div><!-- #swiper-slider -->
+
+                    <!-- Timeline.js -->
+                    <div id="timeline-js" style="display:none">
+                        <div class="col-sm-12">
+                            <div class="section-content">
+                                <h2 class="title-heading">Timeline.js</h2>
+                                <div class="border-line"></div>
+                                <div class="desc">
+                                    <h3 class="sub-heading">Description:</h3>
+                                    <div class="short-desc">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    </div><!-- /.short-desc -->
+                                    <h3 class="sub-heading">Demo:</h3>
+                                    <div class="demo-section">
+                                        <div class="timeline-container timeline-theme-1">
+                                            <div class="timeline js-timeline">
+                                                <div data-time="2017">
+                                                    <div class="row">
+                                                        <img src="img/img-1.jpg" class="col-6 img-fluid" alt="Image">
+                                                        <p class="col-6">This is the year 2017</p>
+                                                    </div>
+                                                </div>
+                                                <div data-time="2016">
+                                                    <div class="row">
+                                                        <img src="img/img-2.jpg" class="col-6 img-fluid" alt="Image">
+                                                        <p class="col-6">This is the year 2013</p>
+                                                    </div>
+                                                </div>
+                                                <div data-time="2015">
+                                                    <div class="row">
+                                                        <img src="img/img-3.jpg" class="col-6 img-fluid" alt="Image">
+                                                        <p class="col-6">This is the year 2013</p>
+                                                    </div>
+                                                </div>
+                                                <div data-time="2014">
+                                                    <div class="row">
+                                                        <img src="img/img-6.jpg" class="col-6 img-fluid" alt="Image">
+                                                        <p class="col-6">This is the year 2013</p>
+                                                    </div>
+                                                </div>
+                                                <div data-time="2013">
+                                                    <div class="row">
+                                                        <img src="img/img-5.jpg" class="col-6 img-fluid" alt="Image">
+                                                        <p class="col-6">This is the year 2013</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.demo-section -->
+                                    <h3 class="sub-heading">Set up:</h3>
+                                    <div class="set-up">
+                                        <p>This is the basic setup.</p>
+                                        <p><span>Step 1:</span> Add the javascript file before end of <code>&lt;body&gt;</code> tag.</p>  
+                                        <samp>                                            
+                                            &lt;script src="../pathname/typed.min.js"&gt;&lt;/script&gt;
+                                        </samp>
+                                        <p><span>Step 2:</span> Add the HTML.</p>  
+                                        <samp>                                            
+                                            &lt;span id="typed" style="white-space:pre;"&gt;&lt;/span&gt;
+                                        </samp>
+                                        <p><span>Step 3:</span> Add the jquery.</p>  
+                                        <img src="img/typed.jpg" class="img-fluid" alt="typed.js code">
+                                    </div><!-- /.set-up -->
+                                    <h3 class="sub-heading">Reference:</h3>
+                                    <ol class="ref">
+                                        <li><a href="#">Link 1</a></li>
+                                    </ol>
+                                </div><!-- /.desc -->
+                            </div><!-- /.section-content -->
+                        </div><!-- /.col-sm-12 -->
+                    </div><!-- #timeline-js -->
+
+                    <!-- Typed.js -->
                     <div id="typed-js">
                         <div class="col-sm-12">
                             <div class="section-content">
@@ -568,8 +718,26 @@
     <!-- swiper.js -->
     <script src="js/swiper.min.js"></script>
 
+    <!-- roundslider.js -->
+    <script src="js/roundslider.min.js"></script>
+
+    <!-- timeline.js -->
+    <script src="js/timeline.min.js"></script>
+
     <!-- Custom JavaScript -->
     <script src="js/main.js"></script>
+
+    <script>
+        function sliderTypeChanged(e) {
+            $("#type").roundSlider({ sliderType: e.value });
+        }
+        function sliderShapeChanged(e) {
+            var options = { circleShape: e.value };
+            if (e.value == "pie") options["startAngle"] = 0;
+            else if (e.value == "custom-quarter" || e.value == "custom-half") options["startAngle"] = 45;
+            $("#shape").roundSlider(options);
+        }
+    </script>
 
 </body>
 

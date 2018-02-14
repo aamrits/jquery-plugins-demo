@@ -65,15 +65,25 @@
             typeSpeed: 40,
             loop: true
         }
-
         var options1 = {
             strings: ["Sliders", "Filters", "Lighboxes", "Typed"],
             typeSpeed: 60,
             loop: true
-        }
-          
+        }          
         var typed = new Typed("#typed", options);
         var plugins = new Typed("#plugins", options1);
+
+        //roundslider.js
+        $("#type").roundSlider({
+            value: 45,
+        });
+        $("#shape").roundSlider({
+            value: 60,
+            sliderType: "min-range"
+        });    
+
+        //timeline.js
+        $('.js-timeline').Timeline();
 
         //highlight.js
         hljs.initHighlightingOnLoad();
