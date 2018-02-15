@@ -85,6 +85,27 @@
         //timeline.js
         $('.js-timeline').Timeline();
 
+        //magnific popup        
+        $('.parent-gallery').each(function() { // the containers for all your galleries
+            $(this).magnificPopup({
+                delegate: 'a', // the selector for gallery item
+                type: 'image',
+                gallery: {
+                    enabled:true
+                }
+            });
+        });
+
+        //mixItUp
+        var containerEl = $('.mixitup');
+
+        var mixer = mixitup(containerEl);
+
+        //filterizr
+        var filterizd = $('.filtr-container').filterizr({
+            //options object
+        });
+
         //highlight.js
         hljs.initHighlightingOnLoad();
 

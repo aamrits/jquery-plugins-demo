@@ -142,6 +142,10 @@ ol.ref {
 .timeline-item p {
     display: inline;
 }
+.parent-gallery img {
+    width: 20%;
+    margin-right: 10px;
+}
 
 /* mediaqueries */
 @media (min-width: 768px) {
