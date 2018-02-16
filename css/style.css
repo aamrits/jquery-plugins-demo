@@ -187,8 +187,13 @@ ol.ref {
         font-size: 18px;
     }
 }
+@media (max-width: 575px) {
+    .bg-slider h1 {
+        font-size: 2.5rem;
+    }
+}
 @media (max-width: 767px) {
     .bg-slider {
-        padding: 80px;
+        padding: 120px 20px 40px;
     }
 }
