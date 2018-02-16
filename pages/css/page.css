@@ -97,3 +97,11 @@ code {
 ol.ref {
     padding-left: 20px;
 }
+
+.filtr-container img {
+    width: 100%;
+}
+.simplefilter li, .multifilter li, .sortandshuffle li {
+    padding: 1rem;
+    text-transform: capitalize;
+}

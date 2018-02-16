@@ -95,16 +95,9 @@
                 }
             });
         });
-
-        //mixItUp
-        var containerEl = $('.mixitup');
-
-        var mixer = mixitup(containerEl);
-
-        //filterizr
-        var filterizd = $('.filtr-container').filterizr({
-            //options object
-        });
+    
+        //headroom.js
+        $('.navbar').headroom();
 
         //highlight.js
         hljs.initHighlightingOnLoad();
@@ -122,5 +115,19 @@
 
     });
 })(jQuery);
+
+/*
+*********************************************
+Window scroll
+*********************************************
+*/
+$(window).scroll(function() {
+    if ($(document).scrollTop() > 300) {
+        $("nav").addClass('shrink');
+    }
+    else {
+        $("nav").removeClass('shrink');
+    }
+})
 
 
