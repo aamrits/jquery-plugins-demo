@@ -99,6 +99,9 @@
         //headroom.js
         $('.navbar').headroom();
 
+        //twentytwenty.js
+        $("#twentytwenty").twentytwenty()
+
         //highlight.js
         hljs.initHighlightingOnLoad();
 
