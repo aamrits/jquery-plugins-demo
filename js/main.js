@@ -59,20 +59,6 @@
                              
         });
 
-        //typed.js
-        var options = {
-            strings: ["This is an example of <b>typed.js</b>", "This is the second sentence", "It will continue typing as <b>loop: true</b>"],
-            typeSpeed: 40,
-            loop: true
-        }
-        var options1 = {
-            strings: ["Sliders", "Filters", "Lighboxes", "Typed"],
-            typeSpeed: 60,
-            loop: true
-        }          
-        var typed = new Typed("#typed", options);
-        var plugins = new Typed("#plugins", options1);
-
         //roundslider.js
         $("#type").roundSlider({
             value: 45,
@@ -80,10 +66,24 @@
         $("#shape").roundSlider({
             value: 60,
             sliderType: "min-range"
-        });    
+        }); 
 
-        //timeline.js
-        $('.js-timeline').Timeline();
+        //twentytwenty.js
+        $("#twentytwenty").twentytwenty();
+
+         //typed.js
+         var options = {
+            strings: ["This is an example of <b>typed.js</b>", "This is the second sentence", "It will continue typing as <b>loop: true</b>"],
+            typeSpeed: 40,
+            loop: true
+        }
+        var options1 = {
+            strings: ["Owl Carousel", "FlexSlider", "bxSlider", "Swiper", "Typed.js", "Magnific Popup", "Smooth Scroll", "Highlighter"],
+            typeSpeed: 60,
+            loop: true
+        }          
+        var typed = new Typed("#typed", options);
+        var plugins = new Typed("#plugins", options1);           
 
         //magnific popup        
         $('.parent-gallery').each(function() { // the containers for all your galleries
@@ -96,10 +96,17 @@
             });
         });
 
-        //twentytwenty.js
-        $("#twentytwenty").twentytwenty();
+        //smoothscroll
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            offset: 60
+        });
 
-        //highlight.js
+        //highlighter.js
+        $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
+        
+        $("PRE CODE").prettyPre();
         hljs.initHighlightingOnLoad();
 
         //clipboard.js
