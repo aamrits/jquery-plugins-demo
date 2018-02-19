@@ -131,6 +131,16 @@ h3.sub-heading {
 ol.ref {
     padding-left: 20px;
 }
+cd-hl {
+    background: #eee;
+    color: #f4645f;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 15px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.25);
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+}
 /* bxSlider */
 .bx-wrapper img {
     margin: 0 auto;

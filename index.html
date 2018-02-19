@@ -49,7 +49,7 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Google Fonts -->    
-    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Kaushan+Script|PT+Sans:400,400i,700,700i|Roboto:400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Kaushan+Script|PT+Sans:400,400i,700,700i|Roboto:400,400i,500,500i,700,700i,900,900i|Roboto+Mono:300i,400,400i,500,500i,700,700i" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
@@ -195,25 +195,87 @@
                                     <h3 class="sub-heading">Set up:</h3>
                                     <div class="set-up">
                                         <p>This is the basic setup.</p>
-                                        <p><span>Step 1:</span> Add the javascript file before end of <code>&lt;body&gt;</code> tag.</p>  
-                                        <samp>                                            
-                                            &lt;script src="../pathname/typed.min.js"&gt;&lt;/script&gt;
-                                        </samp>
-                                        <p><span>Step 2:</span> Add the HTML.</p>  
-                                        <samp>                                            
-                                            &lt;span id="typed" style="white-space:pre;"&gt;&lt;/span&gt;
-                                        </samp>
-                                        <p><span>Step 3:</span> Add the jquery.</p> 
-                                        <div id="ocj-snippet" class="snippet">
+                                        <p><span>Step 1:</span> Add the CSS files inside the <code>&lt;head&gt;</code> tag. Add JS files in the footer.</p>
+                                        <div id="ocj-snippet-basic" class="snippet">
                                             <pre><code class="javascript">
+                                            &lt;!-- owl Carousel CSS --&gt;
+                                            &lt;link href="css/owl.carousel.min.css" rel="stylesheet" /&gt;
+                                            &lt;link href="css/owl.theme.default.min.css" rel="stylesheet" /&gt;
                                             
+                                            &lt;!-- Slim jquery --&gt;
+                                            &lt;script src="js/jquery-3.2.1.slim.min.js"&gt;&lt;/script&gt;
+                                            &lt;!-- Owl Carousel.js --&gt;
+                                            &lt;script src="js/owl.carousel.min.js"&gt;&lt;/script&gt;
                                             </code></pre>
-                                            <button class="btn" data-clipboard-action="copy" data-clipboard-target="#ocj-snippet">Copy</button>
+                                            <button class="btn" data-clipboard-action="copy" data-clipboard-target="#ocj-snippet-basic">Copy</button>
                                         </div> 
+                                        <p><span>NOTE: </span> I am using Bootstrap v4.0 which uses slim jquery. This website is made on Bootstrap Framework. If you want to build your website in Bootstrap 4.0, then visit their <a href="http://getbootstrap.com/" target="_blank">website</a>.</p>
+                                        <p><span>Step 2:</span> Add the HTML.</p>
+                                        <div id="ocj-snippet-html" class="snippet">
+                                            <pre><code class="javascript">
+                                            &lt;div class="basic-carousel owl-carousel owl-theme"&gt;
+                                                &lt;div class="item"&gt;
+                                                    &lt;img src="img/img-1.jpg" class="img-fluid" alt="Image"&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="item"&gt;
+                                                    &lt;img src="img/img-2.jpg" class="img-fluid" alt="Image"&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="item"&gt;
+                                                    &lt;img src="img/img-3.jpg" class="img-fluid" alt="Image"&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="item"&gt;
+                                                    &lt;img src="img/img-4.jpg" class="img-fluid" alt="Image"&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="item"&gt;
+                                                    &lt;img src="img/img-5.jpg" class="img-fluid" alt="Image"&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="item"&gt;
+                                                    &lt;img src="img/img-6.jpg" class="img-fluid" alt="Image"&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="item"&gt;
+                                                    &lt;img src="img/img-7.jpg" class="img-fluid" alt="Image"&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="item"&gt;
+                                                    &lt;img src="img/img-8.jpg" class="img-fluid" alt="Image"&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                            </code></pre>
+                                            <button class="btn" data-clipboard-action="copy" data-clipboard-target="#ocj-snippet-html">Copy</button>
+                                        </div> 
+                                        <p><span>Step 3:</span> Add the jQuery.</p>
+                                        <div id="ocj-snippet-script" class="snippet">
+                                            <pre><code class="javascript">
+                                            (function($) {
+                                                $(document).ready(function() {
+                                                    //owl Carousel
+                                                    $('.basic-carousel').owlCarousel({
+                                                        loop:true,
+                                                        margin:10,
+                                                        nav:true,
+                                                        responsive:{
+                                                            0:{
+                                                                items:1
+                                                            },
+                                                            600:{
+                                                                items:1
+                                                            },
+                                                            1000:{
+                                                                items:3
+                                                            }
+                                                        }
+                                                    });
+                                                });
+                                            })(jQuery); 
+                                            </code></pre>
+                                            <button class="btn" data-clipboard-action="copy" data-clipboard-target="#ocj-snippet-script">Copy</button>
+                                        </div>
                                     </div><!-- /.set-up -->
                                     <h3 class="sub-heading">Reference:</h3>
                                     <ol class="ref">
-                                        <li><a href="#">Link 1</a></li>
+                                        <li><a href="https://owlcarousel2.github.io/OwlCarousel2/" target="_blank">Download Owl Carousel 2</a></li>
+                                        <li><a href="https://owlcarousel2.github.io/OwlCarousel2/docs/started-installation.html" target="_blank">Check how to install</a></li>
+                                        <li><a href="https://owlcarousel2.github.io/OwlCarousel2/docs/api-options.html" target="_blank">Owl Carousel options</a></li>
+                                        <li><a href="https://owlcarousel2.github.io/OwlCarousel2/demos/demos.html" target="_blank">Check the demos</a></li>
                                     </ol>
                                 </div><!-- /.demo-section -->
                             </div><!-- /.desc -->
@@ -229,7 +291,7 @@
                                 <div class="desc">
                                     <h3 class="sub-heading">Description:</h3>
                                     <div class="short-desc">
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                        <p>For implementing a vertical carousel, we need <cd-hl>animate.css</cd-hl> to be integrated with Owl Carousel 2. First, let us see the demo about how it looks.</p>
                                     </div><!-- /.short-desc -->
                                     <h3 class="sub-heading">Demo:</h3>
                                     <div class="offset-sm-3 col-sm-6 demo-section">
@@ -253,26 +315,72 @@
                                     </div><!-- /.demo-section -->
                                     <h3 class="sub-heading">Set up:</h3>
                                     <div class="set-up">
-                                        <p>This is the basic setup.</p>
-                                        <p><span>Step 1:</span> Add the javascript file before end of <code>&lt;body&gt;</code> tag.</p>  
-                                        <samp>                                            
-                                            &lt;script src="../pathname/typed.min.js"&gt;&lt;/script&gt;
-                                        </samp>
-                                        <p><span>Step 2:</span> Add the HTML.</p>  
-                                        <samp>                                            
-                                            &lt;span id="typed" style="white-space:pre;"&gt;&lt;/span&gt;
-                                        </samp>
-                                        <p><span>Step 3:</span> Add the jquery.</p>
-                                        <div id="ocvj-snippet" class="snippet">
+                                        <p>This is the basic setup.</p>  
+                                        <p><span>Step 1:</span> Add the CSS files inside the <code>&lt;head&gt;</code> tag. You also need to add animate.css in the <code>&lt;head&gt;</code>. Add JS files in the footer.</p>
+                                        <div id="ocjv-snippet-basic" class="snippet">
                                             <pre><code class="javascript">
+                                            &lt;!-- owl Carousel CSS --&gt;
+                                            &lt;link href="css/owl.carousel.min.css" rel="stylesheet" /&gt;
+                                            &lt;link href="css/owl.theme.default.min.css" rel="stylesheet" /&gt;
+                                            &lt;!-- Animate CSS --&gt;
+                                            &lt;link href="css/animate.css" rel="stylesheet" /&gt;
                                             
+                                            &lt;!-- Slim jquery --&gt;
+                                            &lt;script src="js/jquery-3.2.1.slim.min.js"&gt;&lt;/script&gt;
+                                            &lt;!-- Owl Carousel.js --&gt;
+                                            &lt;script src="js/owl.carousel.min.js"&gt;&lt;/script&gt;
                                             </code></pre>
-                                            <button class="btn" data-clipboard-action="copy" data-clipboard-target="#ocvj-snippet">Copy</button>
+                                            <button class="btn" data-clipboard-action="copy" data-clipboard-target="#ocjv-snippet-basic">Copy</button>
                                         </div>
+                                        <p><span>Step 2:</span> Add the HTML.</p>
+                                        <p>Add a new class <cd-hl>.vertical-carousel</cd-hl> in the div.</p>
+                                        <div id="ocjv-snippet-html" class="snippet">
+                                            <pre><code class="javascript">
+                                            &lt;div class="vertical-carousel owl-carousel owl-theme"&gt;
+                                                &lt;div class="item"&gt;
+                                                    &lt;img src="img/img-1.jpg" class="img-fluid" alt="Image"&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="item"&gt;
+                                                    &lt;img src="img/img-2.jpg" class="img-fluid" alt="Image"&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="item"&gt;
+                                                    &lt;img src="img/img-3.jpg" class="img-fluid" alt="Image"&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="item"&gt;
+                                                    &lt;img src="img/img-4.jpg" class="img-fluid" alt="Image"&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="item"&gt;
+                                                    &lt;img src="img/img-5.jpg" class="img-fluid" alt="Image"&gt;
+                                                &lt;/div&gt;                                                
+                                            &lt;/div&gt;
+                                            </code></pre>
+                                            <button class="btn" data-clipboard-action="copy" data-clipboard-target="#ocjv-snippet-html">Copy</button>
+                                        </div>
+                                        <p><span>Step 3:</span> Add the jQuery.</p>
+                                        <div id="ocjv-snippet-script" class="snippet">
+                                            <pre><code class="javascript">
+                                            (function($) {
+                                                $(document).ready(function() {
+                                                    //owl Carousel
+                                                    $(".vertical-carousel").owlCarousel({
+                                                        loop: true,
+                                                        autoplay: true,
+                                                        items: 1,   //put "1" item for carousel to work
+                                                        nav: true,
+                                                        autoplayHoverPause: true,
+                                                        animateOut: 'slideOutUp',
+                                                        animateIn: 'slideInUp'
+                                                    });
+                                                });
+                                            })(jQuery); 
+                                            </code></pre>
+                                            <button class="btn" data-clipboard-action="copy" data-clipboard-target="#ocjv-snippet-script">Copy</button>
+                                        </div>
+                                        <p><span>NOTE: </span> You have to put items: 1. Then it will slide vertically one image at a time.</p>
                                     </div><!-- /.set-up -->
                                     <h3 class="sub-heading">Reference:</h3>
                                     <ol class="ref">
-                                        <li><a href="#">Link 1</a></li>
+                                        <li><a href="https://daneden.github.io/animate.css" target="_blank">Download animate.css</a></li>
                                     </ol>
                                 </div><!-- /.demo-section -->
                             </div><!-- /.desc -->
