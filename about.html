@@ -58,10 +58,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="glossary.html">Glossary</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>                                
+                    </li>                               
                 </ul>                       
             </div>
         </div><!-- #.container -->
@@ -76,7 +73,7 @@
                     <h2 class="title-heading">About</h2>
                     <div class="border-line"></div>
                     <div class="desc">                            
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p>Find all jQuery Plugins in one place.</p>
                     </div><!-- /.desc -->
                 </div><!-- /.section-content -->
             </div><!-- /.col-sm-12 -->
@@ -86,9 +83,14 @@
 
     <footer>
         <p class="site-name">jQuery Plugins</p>
-        <p>2018. All rights reserved</p>
+        <p><span id="date"></span>. All rights reserved</p>
     </footer>
 
+    <script>
+        const date = new Date();
+        const getYear = date.getFullYear();
+        document.querySelector('#date').innerHTML = getYear;
+    </script>
 
     <!-- Slim jquery -->
     <script src="js/jquery-3.2.1.slim.min.js"></script>

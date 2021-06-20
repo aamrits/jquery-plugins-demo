@@ -129,7 +129,10 @@ h3.sub-heading {
     box-shadow: 0 0 10px #888;
 }
 ol.ref {
-    padding-left: 20px;
+    padding-left: 0
+}
+ol > li {
+    list-style: none;
 }
 cd-hl {
     background: #eee;

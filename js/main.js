@@ -29,11 +29,6 @@
             animateIn: 'slideInUp'
         });
 
-        //flexslider.js
-        $('.flexslider').flexslider({
-            animation: "slide"
-        });
-
         //bxslider.js
         $('.slider').bxSlider({
             hideControlOnEnd: true,    //to show prev, next arrow
@@ -71,8 +66,8 @@
         //twentytwenty.js
         $("#twentytwenty").twentytwenty();
 
-         //typed.js
-         var options = {
+        //typed.js
+        var options = {
             strings: ["This is an example of <b>typed.js</b>", "This is the second sentence", "It will continue typing as <b>loop: true</b>"],
             typeSpeed: 40,
             loop: true
@@ -119,6 +114,10 @@
         clipboard.on('error', function(e) {
             console.log(e);
         });
+
+        const date = new Date();
+        const getYear = date.getFullYear();
+        document.querySelector('#date').innerHTML = getYear;
 
     });
 })(jQuery);
