@@ -4,7 +4,7 @@
 # jquery-plugins-demo
 A page where you can find demo of many jQuery plugins in one place
 
-Following jQuery plugins are used.
+Following jQuery plugins are used and demonstrated.
 * Owl Carousel 2
 * Flex slider
 * Bx slider
